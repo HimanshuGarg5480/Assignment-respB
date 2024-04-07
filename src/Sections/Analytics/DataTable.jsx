@@ -54,27 +54,27 @@ const DataTable = ({ data }) => {
                 className="border-b border-gray-200 hover:bg-gray-100"
               >
                 <td className="py-2 px-6 ">{row.page}</td>
-                <td className="py-2 px-6">
+                <td className="py-2 px-6 text-center">
                   {row.pageviews}
                   <span className=" ml-2 text-gray-500">
                     ({row.pageviewsPercentage})
                   </span>
                 </td>
-                <td className="py-2 px-6">
+                <td className="py-2 px-6 text-center">
                   {row.uniquePageviews}{" "}
                   <span className=" ml-2 text-gray-500">
                     ({row.uniquePageviewsPercentage})
                   </span>
                 </td>
-                <td className="py-2 px-6">{row.avgTimeOnPage}</td>
+                <td className="py-2 px-6 text-center">{row.avgTimeOnPage}</td>
                 <td className="py-2 px-6">
                   {row.entrances}
                   <span className=" ml-2 text-gray-500">
                     ({row.entrancesPercentage})
                   </span>
                 </td>
-                <td className="py-2 px-6">{row.exitRate}</td>
-                <td className="py-2 px-6">
+                <td className="py-2 px-6 text-center">{row.exitRate}</td>
+                <td className="py-2 px-6 text-center">
                   {row.pageValue}
                   <span className=" ml-2 text-gray-500">
                     ({row.pageValuePercentage})
