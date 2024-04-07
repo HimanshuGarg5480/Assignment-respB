@@ -1,11 +1,11 @@
 import React from "react";
 
-import chart1 from "../../assets/chart1.png";
-import chart2 from "../../assets/chart2.png";
-import chart3 from "../../assets/chart3.png";
-import chart4 from "../../assets/chart4.png";
-import chart5 from "../../assets/chart5.png";
-import chart6 from "../../assets/chart6.png";
+import chart1 from "../../assets/Chart1.png";
+import chart2 from "../../assets/Chart2.png";
+import chart3 from "../../assets/Chart3.png";
+import chart4 from "../../assets/Chart4.png";
+import chart5 from "../../assets/Chart5.png";
+import chart6 from "../../assets/Chart6.png";
 
 const DataTable = ({ data }) => {
   return (
