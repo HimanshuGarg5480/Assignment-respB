@@ -1,10 +1,10 @@
-// SideNavbar.jsx
+
 
 import { useState } from "react";
 import { FiHome, FiLogOut, FiSettings } from "react-icons/fi";
-import logo from "../src/assets/Box.svg";
+import logo from "../assets/Box.svg";
 import { Link, useNavigate } from "react-router-dom";
-import { useUserAuth } from "./context/UserAuthContext";
+import { useUserAuth } from "../context/UserAuthContext";
 import {
   HiOutlineRocketLaunch,
   HiOutlineSquare3Stack3D,

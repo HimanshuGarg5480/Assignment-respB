@@ -1,9 +1,6 @@
 import React from "react";
-import c1 from "../assets/c1.svg";
-import c2 from "../assets/c2.svg";
-import c3 from "../assets/c3.svg";
-import c4 from "../assets/c4.svg";
-
+import { Line } from "react-chartjs-2";
+import { options } from "../utils/constants";
 const CarousalSection = () => {
   return (
     <div className="p-4">
@@ -24,7 +21,31 @@ const CarousalSection = () => {
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
         <div className="relative overflow-hidden pt-7 rounded-lg bg-[#539BBB]  ">
-          <img className="object-cover w-full h-full" src={c1} alt="Image 1" />
+          <div className="flex flex-col justify-end h-full">
+            <Line
+              options={options}
+              data={{
+                labels: [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                ],
+                datasets: [
+                  {
+                    fill: true,
+                    borderWidth: 2,
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    borderColor: "rgba(88, 156, 237, 1)",
+                    backgroundColor: "rgba(121, 174, 212, 0.5)",
+                  },
+                ],
+              }}
+            />
+          </div>{" "}
           <div className="absolute inset-0 left-5 flex flex-col justify-center items-start text-white text-center">
             <p className="text-xl uppercase font-medium">Efficiency</p>
             <p className="text-md">Lorem Ipsum</p>
@@ -34,7 +55,31 @@ const CarousalSection = () => {
           </div>
         </div>
         <div className="relative overflow-hidden pt-7 rounded-lg bg-[#14827B]">
-          <img className="object-cover w-full h-full" src={c2} alt="Image 2" />
+          <div className="flex flex-col justify-end h-full">
+            <Line
+              options={options}
+              data={{
+                labels: [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                ],
+                datasets: [
+                  {
+                    fill: true,
+                    borderWidth: 2,
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    borderColor: "rgba(88, 156, 237, 1)",
+                    backgroundColor: "rgba(5, 95, 89, 1)",
+                  },
+                ],
+              }}
+            />
+          </div>{" "}
           <div className="absolute inset-0 left-5 flex flex-col justify-center items-start text-white text-center">
             <p className="text-xl uppercase font-medium">time to market</p>
             <p className="text-md text-[#FFEEB2]">Lorem Ipsum</p>
@@ -44,7 +89,31 @@ const CarousalSection = () => {
           </div>
         </div>
         <div className="relative overflow-hidden pt-7 rounded-lg bg-[#FFFFFF]">
-          <img className="object-cover w-full h-full" src={c3} alt="Image 3" />
+          <div className="flex flex-col justify-end h-full">
+            <Line
+              options={options}
+              data={{
+                labels: [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                ],
+                datasets: [
+                  {
+                    fill: true,
+                    borderWidth: 2,
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    borderColor: "rgba(255, 79, 82, 1)",
+                    backgroundColor: "rgba(255, 196, 201, 1)",
+                  },
+                ],
+              }}
+            />
+          </div>{" "}
           <div className="absolute inset-0 left-5 flex flex-col justify-center items-start text-black text-center">
             <p className="text-xl uppercase font-medium">Tech debt</p>
             <p className="text-md text-[#939699]">Lorem Ipsum</p>
@@ -54,7 +123,31 @@ const CarousalSection = () => {
           </div>
         </div>
         <div className="relative overflow-hidden pt-7 rounded-lg bg-[#FF4F52]">
-          <img className="object-cover w-full h-full" src={c4} alt="Image 4" />
+          <div className="flex flex-col justify-end h-full">
+            <Line
+              options={options}
+              data={{
+                labels: [
+                  "January",
+                  "February",
+                  "March",
+                  "April",
+                  "May",
+                  "June",
+                  "July",
+                ],
+                datasets: [
+                  {
+                    fill: true,
+                    borderWidth: 2,
+                    data: [65, 59, 80, 81, 56, 55, 40],
+                    borderColor: "rgba(222, 55, 58, 1)",
+                    backgroundColor: "rgba(222, 55, 58, 0.5)",
+                  },
+                ],
+              }}
+            />
+          </div>{" "}
           <div className="absolute inset-0 left-5 flex flex-col justify-center items-start text-white text-center">
             <p className="text-xl uppercase font-medium">Predictability</p>
             <p className="text-md">Lorem Ipsum</p>

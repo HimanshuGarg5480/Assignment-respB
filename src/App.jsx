@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import SideNavbar from "./sidenavbar";
+import SideNavbar from "./components/sidenavbar";
 import SearchBar from "./search";
 import Dashboard from "./dashboard";
 import Login from "./components/login";
